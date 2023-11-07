@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+  
+int main() {
+
+  setlocale(LC_ALL, "portuguese");
+
+char cod[250];
+char codS [250] = "Júlia2208";
+do {
+
+printf("Digite o código:");
+scanf("%s", &cod);
+if (strcmp(cod, codS) == 0) {
+
+printf("Acesso concedido! Bem-vindo \n");
+} else {
+printf("Acesso negado! Digite novamente\n");}
+} while (strcmp(cod, codS) != 0);
+return 0;
+  }
